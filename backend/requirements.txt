@@ -1,0 +1,28 @@
+# Core Dependencies
+fastapi>=0.104.1
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.5.0
+
+# LangChain and AI
+langchain>=1.0.0
+langchain-community>=0.4.0
+langchain-ollama>=0.1.0
+
+# Local Embeddings (No API needed!)
+sentence-transformers>=2.2.0
+
+# Vector Store
+faiss-cpu==1.12.0
+
+# PDF Processing
+PyPDF2==3.0.1
+
+# Utilities
+python-dotenv==1.0.0
+requests>=2.31.0
+
+# Note: No API keys needed! Uses local models:
+# - sentence-transformers for embeddings (runs locally)
+# - Ollama for LLM (runs locally, download from https://ollama.ai)
+
