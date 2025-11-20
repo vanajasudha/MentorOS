@@ -1,5 +1,17 @@
 # 🎓 AI Mentor - Context-Aware Learning Assistant
 
+Team members:
+24BDS043-MONIKA
+24BDS059-PUJARI VANAJA SUDHA
+24BDS067-RITHIKA S
+24BDS084-THOTA VEDA PRIYA
+
+## 📽️ Video Presentation
+
+Click below to watch the presentation:
+
+[🎬 Watch Video](./demo/presentation.mp4)
+
 A comprehensive AI-powered chatbot that acts as a personal mentor for college students. Upload course materials, ask questions, generate quizzes, and get intelligent summaries.
 
 ## ✨ Features
