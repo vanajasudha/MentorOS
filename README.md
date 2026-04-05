@@ -1,5 +1,12 @@
 # 🎓 MentorOS — Context-Aware AI Learning Mentor
 
+**Team Members:**
+- MONIKA-24BDS043
+- Pujari Vanaja Sudha-24BDS059
+- Rithika S-24BDS067
+- Thota Veda Priya-24BDS084
+
+
 An intelligent, personalized AI mentor that goes beyond a basic chatbot by combining **RAG (Retrieval-Augmented Generation)**, **adaptive quizzes**, **study planning**, and **interactive teaching modes**.
 
 > Built for real learning — not just answering questions.
