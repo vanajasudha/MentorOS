@@ -10,7 +10,7 @@ An intelligent, personalized AI mentor that goes beyond a basic chatbot by combi
 
 Click below to watch the video demonstration of MentorOS in action:
 
-[🎬 Watch Presentation Video](./demo/presentation.mp4)
+[🎬 Watch Presentation Video](./demo/ai-mentor-demo.mp4)
 
 ---
 
