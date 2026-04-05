@@ -1,342 +1,147 @@
-# 🎓 AI Mentor - Context-Aware Learning Assistant
+# 🎓 MentorOS — Context-Aware AI Learning Mentor
 
-Team members:
-24BDS043-MONIKA
-24BDS059-PUJARI VANAJA SUDHA
-24BDS067-RITHIKA S
-24BDS084-THOTA VEDA PRIYA
+An intelligent, personalized AI mentor that goes beyond a basic chatbot by combining **RAG (Retrieval-Augmented Generation)**, **adaptive quizzes**, **study planning**, and **interactive teaching modes**.
 
-## 📽️ Video Presentation
-
-Click below to watch the presentation:
-
-[🎬 Watch Video](./demo/presentation.mp4)
-
-A comprehensive AI-powered chatbot that acts as a personal mentor for college students. Upload course materials, ask questions, generate quizzes, and get intelligent summaries.
-
-## ✨ Features
-
-- 📚 **Document Upload**: Upload PDF course materials (textbooks, lecture notes, etc.)
-- 💬 **Intelligent Chat**: Ask questions about your course content with context-aware responses
-- 🎯 **Quiz Generation**: Automatically generate practice quizzes on any topic
-- 📄 **Smart Summaries**: Get concise summaries of complex topics
-- 🧠 **Session Memory**: The AI remembers your conversation history
-- 📊 **Progress Tracking**: Track your learning activities and quiz scores
-- 🔄 **RAG Implementation**: Retrieval-Augmented Generation for accurate answers
-
-## 🛠️ Tech Stack
-
-### Backend
-- **Python 3.10+**
-- **FastAPI**: Modern web framework for building APIs
-- **LangChain**: Framework for LLM applications
-- **OpenAI GPT-3.5/4**: Language model
-- **FAISS**: Vector database for document embeddings
-- **PyPDF2**: PDF text extraction
-
-### Frontend
-- **React 18**: UI library
-- **Vite**: Fast build tool
-- **Tailwind CSS**: Utility-first CSS framework
-- **Modern ES6+**: JavaScript features
-
-## 📁 Project Structure
-
-```
-ai_mentor/
-├── backend/
-│   ├── data/
-│   │   ├── *.pdf              # Your PDF files
-│   │   ├── *.txt              # Extracted text
-│   │   ├── chunks/            # Text chunks for embeddings
-│   │   └── faiss_index/       # Vector store
-│   ├── sessions/              # Session data storage
-│   ├── progress/              # User progress tracking
-│   ├── ingest.py              # PDF to text extraction
-│   ├── chunker.py             # Text chunking
-│   ├── embed_and_index.py     # Create embeddings & vector store
-│   ├── query_demo.py          # Query testing script
-│   ├── app.py                 # FastAPI main application
-│   └── requirements.txt       # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ChatBox.jsx    # Chat interface
-│   │   │   ├── FileUpload.jsx # PDF upload component
-│   │   │   └── QuizSection.jsx # Quiz & summary generator
-│   │   ├── styles/
-│   │   │   └── globals.css    # Global styles
-│   │   ├── App.jsx            # Main application
-│   │   └── main.jsx           # Entry point
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   └── tailwind.config.js
-└── README.md
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.10 or higher
-- Node.js 18 or higher
-- OpenAI API key
-
-### 1. Backend Setup
-
-```bash
-# Navigate to project root
-cd ai_mentor
-
-# Create and activate virtual environment (if not already done)
-python -m venv venv
-
-# On Windows:
-venv\Scripts\activate
-
-# On Mac/Linux:
-source venv/bin/activate
-
-# Install Python dependencies
-pip install -r backend/requirements.txt
-```
-
-### 2. Configure OpenAI API Key
-
-Create a `.env` file in the `backend/` directory:
-
-```bash
-# backend/.env
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-**Get your API key from:** https://platform.openai.com/api-keys
-
-### 3. Process Existing PDFs (Optional)
-
-If you already have PDFs in `backend/data/`, process them:
-
-```bash
-# Extract text from PDFs
-python backend/ingest.py
-
-# Create text chunks
-python backend/chunker.py
-
-# Generate embeddings and create vector store
-python backend/embed_and_index.py
-```
-
-### 4. Start the Backend Server
-
-```bash
-# Start FastAPI server
-uvicorn backend.app:app --reload
-
-# Server will run at: http://localhost:8000
-```
-
-### 5. Frontend Setup
-
-Open a new terminal:
-
-```bash
-# Navigate to frontend
-cd frontend
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Frontend will open at: http://localhost:3000
-```
-
-## 📖 Usage Guide
-
-### 1. Upload Course Materials
-
-1. Click the **"Upload"** tab
-2. Drag & drop or select a PDF file
-3. Click **"Upload & Process"**
-4. Wait for processing to complete
-
-### 2. Chat with AI Mentor
-
-1. Click the **"Chat"** tab
-2. Type your question about the course material
-3. Get intelligent, context-aware responses
-4. The AI remembers your conversation history
-
-### 3. Generate Quizzes
-
-1. Click the **"Study Tools"** tab
-2. Enter a topic (e.g., "Machine Learning Algorithms")
-3. Select number of questions
-4. Click **"Generate Quiz"**
-5. Answer questions and submit for instant feedback
-
-### 4. Get Summaries
-
-1. In the **"Study Tools"** tab
-2. Enter a topic
-3. Click **"Get Summary"**
-4. Receive a comprehensive summary based on your materials
-
-## 🔧 API Endpoints
-
-### Backend API (http://localhost:8000)
-
-- `GET /` - API status and endpoint list
-- `POST /upload-pdf` - Upload and process PDF files
-- `POST /query` - Ask questions (with session memory)
-- `POST /generate-quiz` - Generate practice quizzes
-- `POST /generate-summary` - Get topic summaries
-- `POST /progress` - Update user progress
-- `GET /session/{session_id}` - Get session information
-- `GET /sessions` - List all active sessions
-
-### API Documentation
-
-Visit http://localhost:8000/docs for interactive API documentation (Swagger UI)
-
-## 🧪 Testing the Backend
-
-Test the query system directly:
-
-```bash
-python backend/query_demo.py
-```
-
-This will open an interactive prompt where you can test queries.
-
-## 📝 How It Works
-
-### RAG (Retrieval-Augmented Generation) Pipeline
-
-1. **Document Ingestion**: PDFs are converted to text
-2. **Chunking**: Text is split into manageable chunks
-3. **Embedding**: Chunks are converted to vector embeddings using OpenAI
-4. **Vector Storage**: Embeddings stored in FAISS for fast retrieval
-5. **Query Processing**: User questions are embedded and similar chunks retrieved
-6. **Response Generation**: LLM generates answers using retrieved context
-
-### Session Management
-
-- Each user gets a unique session ID (stored in browser localStorage)
-- Conversation history is maintained per session
-- Progress and activities are tracked
-- Sessions persist across page refreshes
-
-## 🎯 Key Features Explained
-
-### Context-Aware Chat
-- Uses RAG to find relevant information from your documents
-- Maintains conversation context for follow-up questions
-- Falls back to general knowledge when documents don't contain the answer
-
-### Quiz Generation
-- Creates multiple-choice questions based on your materials
-- Provides explanations for correct answers
-- Tracks quiz scores for progress monitoring
-
-### Intelligent Summaries
-- Retrieves relevant sections from your documents
-- Generates structured summaries with key concepts
-- Shows sources used for transparency
-
-### Progress Tracking
-- Records all activities (queries, quizzes, summaries)
-- Maintains session history
-- Can be extended for detailed analytics
-
-## 🔒 Security Notes
-
-- Never commit your `.env` file or API keys
-- Keep your `OPENAI_API_KEY` secure
-- For production, add proper authentication
-- Use environment variables for sensitive data
-
-## 🐛 Troubleshooting
-
-### Backend won't start
-- Check if Python virtual environment is activated
-- Verify all dependencies are installed: `pip install -r backend/requirements.txt`
-- Ensure OpenAI API key is set in `.env` file
-
-### Frontend won't start
-- Verify Node.js is installed: `node --version`
-- Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
-- Check for port conflicts (default: 3000)
-
-### Vector store not found
-- Make sure you've run the processing steps:
-  1. `python backend/ingest.py`
-  2. `python backend/chunker.py`
-  3. `python backend/embed_and_index.py`
-
-### No response from AI
-- Check backend server is running
-- Verify OpenAI API key is valid
-- Check browser console and backend logs for errors
-
-## 🚀 Deployment
-
-### Backend (FastAPI)
-- Deploy to services like Render, Railway, or AWS
-- Set environment variables in deployment platform
-- Use production ASGI server (e.g., Gunicorn)
-
-### Frontend (React + Vite)
-- Build: `npm run build`
-- Deploy `dist/` folder to Vercel, Netlify, or similar
-- Update API URL in production
-
-## 📊 Future Enhancements
-
-- [ ] Add user authentication
-- [ ] Support more file formats (Word, PowerPoint, etc.)
-- [ ] Video content processing (YouTube transcripts)
-- [ ] Flashcard generation
-- [ ] Study schedule recommendations
-- [ ] Multi-language support
-- [ ] Mobile app version
-- [ ] Collaborative learning features
-- [ ] Advanced analytics dashboard
-- [ ] Voice interaction
-
-## 🤝 Contributing
-
-This is a learning project. Feel free to:
-- Report bugs
-- Suggest features
-- Improve documentation
-- Submit pull requests
-
-## 📄 License
-
-This project is for educational purposes.
-
-## 🙏 Acknowledgments
-
-- OpenAI for GPT models
-- LangChain for the RAG framework
-- FastAPI for the excellent web framework
-- React and Vite for frontend tooling
-
-## 💡 Tips for Best Results
-
-1. **Upload Quality PDFs**: Better text extraction = Better answers
-2. **Be Specific**: Ask clear, focused questions
-3. **Upload Multiple Sources**: More context = More accurate responses
-4. **Regular Quizzes**: Test your understanding frequently
-5. **Use Summaries**: Review key concepts before exams
+> Built for real learning — not just answering questions.
 
 ---
 
-**Made with ❤️ for students by students**
+## 📽️ Video Presentation
 
-For questions or support, please open an issue on GitHub.
+Click below to watch the video demonstration of MentorOS in action:
 
+[🎬 Watch Presentation Video](./demo/presentation.mp4)
+
+---
+
+## 🏗️ Architecture Overview
+
+MentorOS uses a sophisticated, multi-layered architecture designed for high availability and hyper-contextual learning.
+
+```mermaid
+graph TD
+    User([User]) <--> Frontend[React/Vite Frontend]
+    Frontend <--> API[FastAPI Backend]
+
+    subgraph "Intelligence Engine"
+        API --> Intent{Intent Detection}
+        Intent -->|Concept| RAG[RAG Pipeline]
+        Intent -->|Quiz| QuizGen[Adaptive Quiz Engine]
+        Intent -->|Roadmap| Planner[Neural Roadmap Planner]
+        
+        RAG --> LLMRouter{LLM Router}
+        LLMRouter -->|Primary| Groq[Groq: Llama 3.1 8B]
+        LLMRouter -->|Fallback| Ollama[Ollama: Llama 3.2 1B]
+    end
+
+    subgraph "Data & Persistence"
+        RAG <--> FAISS[(FAISS Vector Store)]
+        API <--> Mongo[(MongoDB Atlas)]
+        Mongo --- Users[Users & Auth]
+        Mongo --- sessions[Session History]
+        Mongo --- Progress[Neural Alignment Tracking]
+    end
+```
+
+---
+
+## 🚀 Features
+
+### 🧑‍💻 1. Smart AI Chat (Intent-Driven)
+- **Dynamic Intent Detection**: Automatically categorizes queries into concepts, planning, quizzes, or motivation.
+- **Hyper-Contextual RAG**: Uses **sentence-transformers/all-MiniLM-L6-v2** to retrieve precise context.
+- **Fallback Resilience**: Seamlessly transitions from **Groq (Cloud)** to **Ollama (Local)** if disconnected.
+
+### 🧠 2. Adaptive Assessment Engine
+- **Difficulty Scaling**: Quizzes adjust in real-time based on your previous 3 attempts (Easy/Medium/Hard).
+- **Format Variety**: MCQs with detailed, material-based explanations.
+- **Score Persistence**: All results are saved to your neural alignment profile for long-term tracking.
+
+### 🎓 3. "Be My Student" Mode (Teacher Mode)
+- **The Protege Effect**: AI acts as a student, forcing the user to explain complex topics — the most effective way to learn.
+- **Interactive Roleplay**: AI asks probing questions and makes common mistakes for the user to correct.
+
+### 📉 4. Neural Link Tracker & Study Plans
+- **Progress Insights**: Visualization of learning patterns and topic mastery.
+- **7-Day Roadmaps**: Generated study plans including specific tasks, learning steps, and revision cycles.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 18 (Vite)**
+- **Tailwind CSS** (Modern dark-mode aesthetic)
+- **Lucide Icons** & **Mermaid.js**
+
+### Backend (The Brain)
+- **FastAPI**: Asynchronous high-performance API.
+- **LangChain**: RAG orchestration and chain-of-thought processing.
+- **FAISS**: Local, high-speed vector database per user.
+- **PyPDF2 + EasyOCR**: Advanced document and image ingestion.
+
+### AI Models & Storage
+- **Groq API**: Primary LLM (Llama 3.1 8B) for 200+ tokens/sec.
+- **Ollama**: Local containerized fallback for privacy and availability.
+- **MongoDB Atlas**: Global persistence for users and activity telemetry.
+
+---
+
+## ⚙️ Robust Fallback Ecosystem (IMPORTANT)
+
+MentorOS is designed to never block a learning session:
+1.  **Level 1 (RAG + Groq)**: Context-aware answers via the fastest cloud LLM.
+2.  **Level 2 (General Groq)**: Falls back to general knowledge if the material is insufficient.
+3.  **Level 3 (Local Ollama)**: If cloud services fail, the system activates the local `llama3.2:1b` model.
+
+---
+
+## 📦 Installation
+
+### 1. Prerequisites
+- **Python 3.10+**
+- **Node.js 18+**
+- **MongoDB Atlas** account (or local MongoDB)
+- **Groq API Key** (Free tier available)
+- **Ollama** (Optional, for local fallback)
+
+### 2. Backend Setup
+```bash
+cd backend
+python -m venv venv
+# Windows:
+.\venv\Scripts\activate
+pip install -r requirements.txt
+# Start server:
+uvicorn app:app --reload
+```
+
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (`backend/.env`)
+```env
+MONGO_URI=your_mongodb_atlas_uri
+JWT_SECRET=your_jwt_signing_key
+GROQ_API_KEY=your_groq_key_here
+```
+
+### Frontend (`frontend/.env`)
+```env
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+---
+
+## 📄 License
+This project is for educational purposes.
+
+**Made with ❤️ for students, by students.**

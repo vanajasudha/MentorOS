@@ -1,0 +1,76 @@
+{
+  "attempt_id": "6b0542a6-0a1c-45cc-9d47-f6bc89a26848",
+  "session_id": "session_1775328116672_xqri9lv1m",
+  "topic": "generate a quiz on deep learning",
+  "timestamp": "2026-04-05T00:19:42.120900",
+  "score": 80.0,
+  "total_questions": 5,
+  "correct_count": 4,
+  "questions": [
+    {
+      "question": "What is Deep Learning?",
+      "options": [
+        "A) A type of Machine Learning",
+        "B) A type of Data Visualization",
+        "C) A type of Database",
+        "D) A type of Operating System"
+      ],
+      "selected_answer": "A",
+      "correct_answer": "A",
+      "explanation": "Deep Learning is a subset of Machine Learning that uses neural networks.",
+      "is_correct": true
+    },
+    {
+      "question": "What is a Neural Network?",
+      "options": [
+        "A) A type of Algorithm",
+        "B) A type of Data Structure",
+        "C) A computer system modeled after the human brain",
+        "D) A type of Database"
+      ],
+      "selected_answer": "C",
+      "correct_answer": "C",
+      "explanation": "A Neural Network is a computer system inspired by the structure and function of the human brain.",
+      "is_correct": true
+    },
+    {
+      "question": "What is a Deep Learning Framework?",
+      "options": [
+        "A) A programming language",
+        "B) A type of Database",
+        "C) A set of tools and libraries for building Deep Learning models",
+        "D) A type of Operating System"
+      ],
+      "selected_answer": "C",
+      "correct_answer": "C",
+      "explanation": "A Deep Learning Framework is a collection of tools and libraries used for building and training Deep Learning models.",
+      "is_correct": true
+    },
+    {
+      "question": "What is Backpropagation?",
+      "options": [
+        "A) A type of Optimization Algorithm",
+        "B) A type of Data Preprocessing technique",
+        "C) A type of Neural Network Training method",
+        "D) A type of Model Evaluation metric"
+      ],
+      "selected_answer": "C",
+      "correct_answer": "C",
+      "explanation": "Backpropagation is a widely used algorithm for training Neural Networks.",
+      "is_correct": true
+    },
+    {
+      "question": "What is Overfitting?",
+      "options": [
+        "A) When a model is too simple to fit the data",
+        "B) When a model is too complex to fit the data",
+        "C) When a model is performing well on training data",
+        "D) When a model is performing poorly on training data"
+      ],
+      "selected_answer": "C",
+      "correct_answer": "B",
+      "explanation": "Overfitting occurs when a model is too complex and fits the training data too closely.",
+      "is_correct": false
+    }
+  ]
+}

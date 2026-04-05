@@ -1,0 +1,86 @@
+{
+  "plan_id": "c3fd7bcc-fd71-4d78-930a-631d1ff37f43",
+  "session_id": "session_1775328116672_xqri9lv1m",
+  "generated_at": "2026-04-05T00:12:03.847790",
+  "num_days": 7,
+  "weak_topics": [],
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-04-05",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    },
+    {
+      "day": 2,
+      "date": "2026-04-06",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    },
+    {
+      "day": 3,
+      "date": "2026-04-07",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    },
+    {
+      "day": 4,
+      "date": "2026-04-08",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    },
+    {
+      "day": 5,
+      "date": "2026-04-09",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    },
+    {
+      "day": 6,
+      "date": "2026-04-10",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    },
+    {
+      "day": 7,
+      "date": "2026-04-11",
+      "topic": "Free practice",
+      "type": "rest",
+      "task": "Free practice day \u2014 ask the AI tutor any question or explore a new topic.",
+      "note": "Ask the AI tutor anything",
+      "completed": false,
+      "completed_at": null,
+      "missed": false
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "attempt_id": "f0080159-2560-4e73-9d5e-6ea2b567fc48",
+  "session_id": "session_1775318102596_4pdkzchte",
+  "topic": "Operating Systems",
+  "timestamp": "2026-04-04T21:48:01.161925",
+  "score": 80.0,
+  "total_questions": 5,
+  "correct_count": 4,
+  "questions": [
+    {
+      "question": "What happens when you install an operating system on a new computer?",
+      "options": [
+        "A) The computer's hardware is upgraded",
+        "B) The operating system is installed on top of the existing OS",
+        "C) The operating system is installed on the computer's firmware",
+        "D) The operating system is installed on the computer's hard drive"
+      ],
+      "selected_answer": "B",
+      "correct_answer": "D",
+      "explanation": "The operating system is installed on the computer's hard drive, where it can be accessed and run by the computer's processor.",
+      "is_correct": false
+    },
+    {
+      "question": "Which of the following is a characteristic of a 64-bit operating system?",
+      "options": [
+        "A) It can only run 32-bit applications",
+        "B) It can run both 32-bit and 64-bit applications",
+        "C) It requires 32-bit hardware to run",
+        "D) It is slower than a 32-bit operating system"
+      ],
+      "selected_answer": "B",
+      "correct_answer": "B",
+      "explanation": "A 64-bit operating system can run both 32-bit and 64-bit applications, providing greater flexibility and compatibility.",
+      "is_correct": true
+    },
+    {
+      "question": "A user is trying to install a new program on their Windows 10 computer, but they are getting an error message saying that the program requires administrative privileges. What should the user do?",
+      "options": [
+        "A) Run the program as an administrator",
+        "B) Disable UAC (User Account Control) to avoid the error message",
+        "C) Uninstall the program and reinstall it as an administrator",
+        "D) Contact the program's developer for support"
+      ],
+      "selected_answer": "A",
+      "correct_answer": "A",
+      "explanation": "The user should run the program as an administrator to gain the necessary privileges to install the program.",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary function of the Task Manager in a Windows operating system?",
+      "options": [
+        "A) To create new user accounts",
+        "B) To manage system processes and applications",
+        "C) To configure network settings",
+        "D) To update the operating system"
+      ],
+      "selected_answer": "B",
+      "correct_answer": "B",
+      "explanation": "The Task Manager allows users to view and manage running processes and applications, as well as terminate or close them if necessary.",
+      "is_correct": true
+    },
+    {
+      "question": "A Linux user wants to set up a new user account with limited privileges. What command would they use to do this?",
+      "options": [
+        "A) useradd newuser",
+        "B) passwd newuser",
+        "C) adduser newuser",
+        "D) usermod newuser -a -G limitedgroup"
+      ],
+      "selected_answer": "A",
+      "correct_answer": "A",
+      "explanation": "The useradd command is used to create new user accounts in Linux, and it can be used to set up a new user account with limited privileges by adding them to a specific group.",
+      "is_correct": true
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+
 # Core Dependencies
 fastapi>=0.104.1
 uvicorn>=0.24.0
@@ -8,6 +9,7 @@ pydantic>=2.5.0
 langchain>=1.0.0
 langchain-community>=0.4.0
 langchain-ollama>=0.1.0
+langchain-groq>=0.1.0
 
 # Local Embeddings (No API needed!)
 sentence-transformers>=2.2.0
@@ -18,9 +20,19 @@ faiss-cpu==1.12.0
 # PDF Processing
 PyPDF2==3.0.1
 
+# Multi-Modal Support
+easyocr>=1.7.0    # Images
+beautifulsoup4>=4.12.0 # URLs
+
 # Utilities
 python-dotenv==1.0.0
 requests>=2.31.0
+
+# Database & Authentication
+pymongo>=4.6.0
+pyjwt>=2.8.0
+passlib[bcrypt]>=1.7.4
+bcrypt>=4.0.1
 
 # Note: No API keys needed! Uses local models:
 # - sentence-transformers for embeddings (runs locally)

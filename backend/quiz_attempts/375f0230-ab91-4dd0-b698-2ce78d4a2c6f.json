@@ -1,0 +1,50 @@
+{
+  "attempt_id": "375f0230-ab91-4dd0-b698-2ce78d4a2c6f",
+  "session_id": "session_1775328116672_xqri9lv1m",
+  "topic": "operating systems",
+  "timestamp": "2026-04-05T00:14:29.233226",
+  "score": 33.3,
+  "total_questions": 3,
+  "correct_count": 1,
+  "questions": [
+    {
+      "question": "What is the primary function of an operating system?",
+      "options": [
+        "A) It acts as an interface between user and hardware.",
+        "B) It manages and handles hardware and software resources of a computing device.",
+        "C) It performs virus scanning and firewall protection.",
+        "D) It handles user authentication and access control."
+      ],
+      "selected_answer": "A",
+      "correct_answer": "B",
+      "explanation": "An operating system manages and handles hardware and software resources of a computing device.",
+      "is_correct": false
+    },
+    {
+      "question": "A user is trying to install a new application on their Windows 11 computer, but it's asking for permissions to access the system's files. What is the operating system doing?",
+      "options": [
+        "A) It's verifying the application's digital signature.",
+        "B) It's asking for user consent to access system files.",
+        "C) It's automatically granting access to system files.",
+        "D) It's blocking the application's installation."
+      ],
+      "selected_answer": "B",
+      "correct_answer": "B",
+      "explanation": "The operating system is asking for user consent to access system files, which is a security feature to prevent unauthorized access.",
+      "is_correct": true
+    },
+    {
+      "question": "What type of management does an operating system perform for memory?",
+      "options": [
+        "A) It allocates memory to applications based on their priority.",
+        "B) It assigns fixed memory allocations to each application.",
+        "C) It dynamically allocates and deallocates memory to applications.",
+        "D) It shuts down the computer when memory runs low."
+      ],
+      "selected_answer": "A",
+      "correct_answer": "C",
+      "explanation": "An operating system dynamically allocates and deallocates memory to applications as needed, ensuring efficient use of system resources.",
+      "is_correct": false
+    }
+  ]
+}

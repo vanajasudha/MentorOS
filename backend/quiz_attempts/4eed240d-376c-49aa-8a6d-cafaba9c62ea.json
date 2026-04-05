@@ -1,0 +1,76 @@
+{
+  "attempt_id": "4eed240d-376c-49aa-8a6d-cafaba9c62ea",
+  "session_id": "session_1775318102596_4pdkzchte",
+  "topic": "ML",
+  "timestamp": "2026-04-04T21:35:26.624429",
+  "score": 60.0,
+  "total_questions": 5,
+  "correct_count": 3,
+  "questions": [
+    {
+      "question": "Which of the following neural network architectures is best suited for handling sequential data with long-term dependencies, such as language modeling or speech recognition?",
+      "options": [
+        "A) Convolutional Neural Network (CNN)",
+        "B) Recurrent Neural Network (RNN)",
+        "C) Long Short-Term Memory (LSTM) network",
+        "D) Autoencoder"
+      ],
+      "selected_answer": "C",
+      "correct_answer": "C",
+      "explanation": "LSTM networks are designed to handle long-term dependencies by using memory cells to store information over time.",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary difference between the 'overfitting' and 'underfitting' problems in machine learning?",
+      "options": [
+        "A) Overfitting occurs when a model is too complex and fits the noise in the training data, while underfitting occurs when a model is too simple and fails to capture the underlying pattern.",
+        "B) Overfitting occurs when a model is too simple and fails to capture the underlying pattern.",
+        "C) Underfitting occurs when a model is too complex and fits the noise in the training data.",
+        "D) Both overfitting and underfitting occur when a model is too simple."
+      ],
+      "selected_answer": "A",
+      "correct_answer": "A",
+      "explanation": "Overfitting occurs when a model is too complex, while underfitting occurs when a model is too simple.",
+      "is_correct": true
+    },
+    {
+      "question": "A model is trained on a dataset with a class imbalance, where one class has a significantly larger number of instances than the other classes. Which of the following techniques can be used to address this issue?",
+      "options": [
+        "A) Oversampling the minority class",
+        "B) Undersampling the majority class",
+        "C) Random Forest",
+        "D) Both A and B"
+      ],
+      "selected_answer": "D",
+      "correct_answer": "D",
+      "explanation": "Both oversampling the minority class and undersampling the majority class can be used to address class imbalance.",
+      "is_correct": true
+    },
+    {
+      "question": "What is the term for a machine learning model that is trained to make predictions or decisions based on the output of another model?",
+      "options": [
+        "A) Ensemble method",
+        "B) Hyperparameter tuning",
+        "C) Model stacking",
+        "D) Transfer learning"
+      ],
+      "selected_answer": "A",
+      "correct_answer": "C",
+      "explanation": "Model stacking involves training a model to make predictions or decisions based on the output of another model.",
+      "is_correct": false
+    },
+    {
+      "question": "A neural network is trained on a dataset with a large number of features. Which of the following regularization techniques can be used to prevent overfitting?",
+      "options": [
+        "A) Dropout",
+        "B) L1 regularization",
+        "C) L2 regularization",
+        "D) Batch normalization"
+      ],
+      "selected_answer": "B",
+      "correct_answer": "C",
+      "explanation": "L2 regularization involves adding a penalty term to the loss function to prevent overfitting.",
+      "is_correct": false
+    }
+  ]
+}

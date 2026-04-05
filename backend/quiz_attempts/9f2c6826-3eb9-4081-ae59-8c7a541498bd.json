@@ -1,0 +1,76 @@
+{
+  "attempt_id": "9f2c6826-3eb9-4081-ae59-8c7a541498bd",
+  "session_id": "session_1775318102596_4pdkzchte",
+  "topic": "Data Base management system",
+  "timestamp": "2026-04-04T21:31:45.208127",
+  "score": 80.0,
+  "total_questions": 5,
+  "correct_count": 4,
+  "questions": [
+    {
+      "question": "What is the primary function of a database schema in a Database Management System?",
+      "options": [
+        "A) To store data",
+        "B) To define the structure of a database",
+        "C) To enforce data security",
+        "D) To optimize database performance"
+      ],
+      "selected_answer": "D",
+      "correct_answer": "B",
+      "explanation": "A database schema defines the organization of data within a database.",
+      "is_correct": false
+    },
+    {
+      "question": "A company has two departments, sales and marketing, with each department having multiple employees. Which Database Management System design is most suitable for this scenario?",
+      "options": [
+        "A) Relational Database Management System",
+        "B) Object-Oriented Database Management System",
+        "C) Hierarchical Database Management System",
+        "D) Network Database Management System"
+      ],
+      "selected_answer": "A",
+      "correct_answer": "A",
+      "explanation": "Relational databases are suitable for complex relationships between data entities, such as employees and departments.",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of normalization in a Database Management System?",
+      "options": [
+        "A) To reduce data redundancy",
+        "B) To increase data consistency",
+        "C) To improve data security",
+        "D) To enhance database scalability"
+      ],
+      "selected_answer": "A",
+      "correct_answer": "A",
+      "explanation": "Normalization removes data redundancy by dividing it into smaller tables.",
+      "is_correct": true
+    },
+    {
+      "question": "A user wants to retrieve all customer information from a database, including their orders. Which SQL query would achieve this?",
+      "options": [
+        "A) SELECT * FROM customers",
+        "B) SELECT * FROM customers JOIN orders",
+        "C) SELECT * FROM customers WHERE orders IS NOT NULL",
+        "D) SELECT * FROM customers UNION orders"
+      ],
+      "selected_answer": "B",
+      "correct_answer": "B",
+      "explanation": "The JOIN clause combines rows from two or more tables.",
+      "is_correct": true
+    },
+    {
+      "question": "What is the difference between a primary key and a unique key in a database table?",
+      "options": [
+        "A) Primary key must be unique, but not necessarily not null",
+        "B) Unique key must be unique, but not necessarily a primary key",
+        "C) Primary key is used for data security, while unique key is used for data integrity",
+        "D) Primary key is used for data integrity, while unique key is used for data security"
+      ],
+      "selected_answer": "B",
+      "correct_answer": "B",
+      "explanation": "A unique key is used to enforce uniqueness, while a primary key is used to identify each row uniquely.",
+      "is_correct": true
+    }
+  ]
+}
